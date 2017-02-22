@@ -4,7 +4,6 @@ package pl.brogowski77.primefaces.service;
 import java.util.ArrayList;
 import java.util.List;
 
-import javax.faces.bean.ApplicationScoped;
 import javax.faces.bean.ManagedBean;
 
 import pl.brogowski77.primefaces.domain.Car;

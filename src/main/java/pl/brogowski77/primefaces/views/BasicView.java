@@ -6,29 +6,28 @@ import java.util.List;
 import javax.annotation.PostConstruct;
 import javax.faces.bean.ManagedBean;
 import javax.faces.bean.ManagedProperty;
-import javax.faces.bean.ViewScoped;
 
-import pl.brogowski77.primefaces.domain.Car;
-import pl.brogowski77.primefaces.service.CarService;
+import pl.brogowski77.primefaces.domain.Course;
+import pl.brogowski77.primefaces.service.CourseService;
  
 @ManagedBean(name="dtBasicView")
 public class BasicView implements Serializable {
      
-    private List<Car> cars;
+    private List<Course> courses;
      
-    @ManagedProperty("#{carService}")
-    private CarService service;
+    @ManagedProperty("#{courseService}")
+    private CourseService service;
  
     @PostConstruct
     public void init() {
-        cars = service.createCars(10);
+        courses = service.createCourses();
     }
      
-    public List<Car> getCars() {
-        return cars;
+    public List<Course> getCourses() {
+        return courses;
     }
  
-    public void setService(CarService service) {
+    public void setService(CourseService service) {
         this.service = service;
     }
 }

@@ -13,8 +13,8 @@ public class ImagesView {
 	@PostConstruct
 	public void init() {
 		images = new ArrayList<String>();
-		for (int i = 1; i <= 12; i++) {
-			images.add("/gallery/chuda" + i + ".jpg");
+		for (int i = 0; i <= 9; i++) {
+			images.add("/gallery/perfect" + i + ".jpg");
 		}
 	}
 

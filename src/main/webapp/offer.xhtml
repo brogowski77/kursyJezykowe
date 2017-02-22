@@ -7,13 +7,33 @@
 	xmlns:p="http://primefaces.org/ui">
 <h:head>
 	<title>PERFECT - Oferta</title>
-	<meta content='text/html; charset=UTF-8' http-equiv="Content-Type"/>
+	<meta content='text/html; charset=UTF-8' http-equiv="Content-Type" />
 </h:head>
 <h:body>
 	<ui:composition template="/index.xhtml">
 
 		<ui:define name="content">
-			<h:outputText value="SlaskManager 2015 - wersja 1.7-SNAPSHOT" />
+			<p:dataTable var="course" value="#{dtBasicView.courses}">
+				<p:column headerText="ID kursu">
+					<h:outputText value="#{course.id}" />
+				</p:column>
+
+				<p:column headerText="Język">
+					<h:outputText value="#{course.language}" />
+				</p:column>
+
+				<p:column headerText="Poziom">
+					<h:outputText value="#{course.standard}" />
+				</p:column>
+
+				<p:column headerText="Czas trwania">
+					<h:outputText value="#{course.length}" />
+				</p:column>
+
+				<p:column headerText="Prowadzący kurs">
+					<h:outputText value="#{course.lector}" />
+				</p:column>
+			</p:dataTable>
 		</ui:define>
 
 	</ui:composition>
