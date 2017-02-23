@@ -17,8 +17,14 @@
 				<p:galleria value="#{imagesView.images}" var="image"
 					panelWidth="700" panelHeight="525" showCaption="true">
 					<p:graphicImage name="#{image}"
-						alt="Image Description for #{image}" title="#{image}"/>
+						alt="Image Description for #{image}" title="#{image}" />
 				</p:galleria>
+
+				<!-- <p:contentFlow value="#{imagesView.images}" var="image">
+					<p:graphicImage name="#{image}"
+						styleClass="content" />
+					<div class="caption">#{image}</div>
+				</p:contentFlow> -->
 			</div>
 		</ui:define>
 

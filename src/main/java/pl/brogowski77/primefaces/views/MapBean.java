@@ -11,7 +11,7 @@ public class MapBean {
 	private MapModel model = new DefaultMapModel();
 
 	public MapBean() {
-		model.addOverlay(new Marker(new LatLng(41.381542, 2.122893), "Perfect"));
+		model.addOverlay(new Marker(new LatLng(51.1120159, 17.0593966), "Perfect"));
 	}
 
 	public MapModel getModel() {

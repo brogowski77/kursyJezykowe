@@ -2,7 +2,7 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 
-	<groupId>pl.sda</groupId>
+	<groupId>pl.brogowski77</groupId>
 	<artifactId>primefaces</artifactId>
 	<version>1.0-SNAPSHOT</version>
 	<packaging>war</packaging>
@@ -14,15 +14,15 @@
 
 	<dependencies>
 
-			<!-- JUnit -->
+		<!-- JUnit -->
 		<dependency>
-		    <groupId>junit</groupId>
-		    <artifactId>junit</artifactId>
-		    <version>4.12</version>
-		    <scope>test</scope>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<version>4.12</version>
+			<scope>test</scope>
 		</dependency>
-		
-			<!-- Dependency for Mockito -->
+
+		<!-- Dependency for Mockito -->
 		<dependency>
 			<groupId>org.mockito</groupId>
 			<artifactId>mockito-all</artifactId>
@@ -30,7 +30,7 @@
 			<scope>test</scope>
 		</dependency>
 
-                <!-- Java EE -->
+		<!-- Java EE -->
 		<dependency>
 			<groupId>javax</groupId>
 			<artifactId>javaee-web-api</artifactId>
@@ -44,18 +44,22 @@
 			<artifactId>primefaces</artifactId>
 			<version>6.0</version>
 		</dependency>
-                <dependency>
-                        <groupId>org.primefaces.extensions</groupId>
-                        <artifactId>all-themes</artifactId>
-                        <version>1.0.8</version>
-                </dependency>
-                <dependency>
-                        <groupId>org.primefaces.extensions</groupId>
-                        <artifactId>primefaces-extensions</artifactId>
-                        <version>6.0.0</version>
-                </dependency>
-                
-                <!-- Primefaces dependencies -->
+  		<dependency>
+			<groupId>org.primefaces.extensions</groupId>
+			<artifactId>all-themes</artifactId>
+			<version>1.0.8</version>
+		</dependency> 
+		<dependency>
+			<groupId>org.primefaces.extensions</groupId>
+			<artifactId>primefaces-extensions</artifactId>
+			<version>6.0.0</version>
+		</dependency> 
+<!-- 		<dependency>
+			<groupId>org.primefaces.themes</groupId>
+			<artifactId>afterdark</artifactId>
+			<version>1.0.8</version>
+		</dependency> -->
+		<!-- Primefaces dependencies -->
 
 
 
@@ -102,9 +106,9 @@
 			<version>2.2.11</version>
 		</dependency>
 		<dependency>
-		    <groupId>org.glassfish.jaxb</groupId>
-		    <artifactId>jaxb-runtime</artifactId>
-		    <version>2.2.11</version>
+			<groupId>org.glassfish.jaxb</groupId>
+			<artifactId>jaxb-runtime</artifactId>
+			<version>2.2.11</version>
 		</dependency>
 
 	</dependencies>
