@@ -5,29 +5,31 @@
 	xmlns:f="http://java.sun.com/jsf/core"
 	xmlns:ui="http://java.sun.com/jsf/facelets"
 	xmlns:p="http://primefaces.org/ui">
-<h:head>
-	<title>PERFECT - Galeria</title>
-	<meta content='text/html; charset=UTF-8' http-equiv="Content-Type" />
-</h:head>
-<h:body>
-	<ui:composition template="/index.xhtml">
+<f:view>
+	<h:head>
+		<title>PERFECT - Galeria</title>
+		<meta content='text/html; charset=UTF-8' http-equiv="Content-Type" />
+	</h:head>
+	<h:body>
+		<ui:composition template="/index.xhtml">
 
-		<ui:define name="content">
-			<div align="center">
-				<p:galleria value="#{imagesView.images}" var="image"
-					panelWidth="700" panelHeight="525" showCaption="true">
-					<p:graphicImage name="#{image}"
-						alt="Image Description for #{image}" title="#{image}" />
-				</p:galleria>
+			<ui:define name="content">
+				<div align="center">
+					<p:galleria value="#{imagesView.images}" var="image"
+						panelWidth="700" panelHeight="525" showCaption="true">
+						<p:graphicImage name="#{image}" alt="Kursy językowe"
+							title="Perfect" />
+					</p:galleria>
 
-				<!-- <p:contentFlow value="#{imagesView.images}" var="image">
+					<!-- <p:contentFlow value="#{imagesView.images}" var="image">
 					<p:graphicImage name="#{image}"
 						styleClass="content" />
 					<div class="caption">#{image}</div>
 				</p:contentFlow> -->
-			</div>
-		</ui:define>
+				</div>
+			</ui:define>
 
-	</ui:composition>
-</h:body>
+		</ui:composition>
+	</h:body>
+</f:view>
 </html>

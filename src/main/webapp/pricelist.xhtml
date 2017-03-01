@@ -5,17 +5,19 @@
 	xmlns:f="http://java.sun.com/jsf/core"
 	xmlns:ui="http://java.sun.com/jsf/facelets"
 	xmlns:p="http://primefaces.org/ui">
-<h:head>
-	<title>PERFECT - Cennik</title>
-	<meta content='text/html; charset=UTF-8' http-equiv="Content-Type"/>
-</h:head>
-<h:body>
-	<ui:composition template="/index.xhtml">
+<f:view>
+	<h:head>
+		<title>PERFECT - Cennik</title>
+		<meta content='text/html; charset=UTF-8' http-equiv="Content-Type" />
+	</h:head>
+	<h:body>
+		<ui:composition template="/index.xhtml">
 
-		<ui:define name="content">
-			<h:outputText value="SlaskManager 2015 - wersja 1.7-SNAPSHOT" />
-		</ui:define>
+			<ui:define name="content">
+				<h:outputText value="Cennik" />
+			</ui:define>
 
-	</ui:composition>
-</h:body>
+		</ui:composition>
+	</h:body>
+</f:view>
 </html>

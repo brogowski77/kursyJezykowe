@@ -1,6 +1,6 @@
 package pl.brogowski77.primefaces.views;
 
-import java.io.Serializable;
+//import java.io.Serializable;
 import java.util.List;
 
 import javax.annotation.PostConstruct;
@@ -11,7 +11,7 @@ import pl.brogowski77.primefaces.domain.Course;
 import pl.brogowski77.primefaces.service.CourseService;
  
 @ManagedBean(name="dtBasicView")
-public class BasicView implements Serializable {
+public class BasicView {
      
     private List<Course> courses;
      

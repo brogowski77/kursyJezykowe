@@ -19,9 +19,17 @@
 		<ui:composition template="/index.xhtml">
 
 			<ui:define name="content">
-				<!-- <h:outputText value="Tekst" /> -->
+				<div>
+				<h2>Kursy językowe Perfect</h2>
+				Plac Grunwaldzki 22<br />
+				48-300 Wrocław<br />
+				tel: 800-123-123<br />
+				e-mail: perfectwroclaw@gmail.com
+				</div>
+				<br />
 				<p:gmap center="51.1120159, 17.0593966" zoom="16" type="hybrid"
-					style="width:800px;height:500px" streetView="true" model="#{mapBean.model}"/>
+					style="width:700px;height:400px" streetView="true" model="#{mapBean.model}"/>
+				
 			</ui:define>
 
 		</ui:composition>

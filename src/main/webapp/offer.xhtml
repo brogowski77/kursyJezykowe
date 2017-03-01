@@ -5,37 +5,39 @@
 	xmlns:f="http://java.sun.com/jsf/core"
 	xmlns:ui="http://java.sun.com/jsf/facelets"
 	xmlns:p="http://primefaces.org/ui">
-<h:head>
-	<title>PERFECT - Oferta</title>
-	<meta content='text/html; charset=UTF-8' http-equiv="Content-Type" />
-</h:head>
-<h:body>
-	<ui:composition template="/index.xhtml">
+<f:view>
+	<h:head>
+		<title>PERFECT - Oferta</title>
+		<meta content='text/html; charset=UTF-8' http-equiv="Content-Type" />
+	</h:head>
+	<h:body>
+		<ui:composition template="/index.xhtml">
 
-		<ui:define name="content">
-			<p:dataTable var="course" value="#{dtBasicView.courses}">
-				<p:column headerText="ID kursu">
-					<h:outputText value="#{course.id}" />
-				</p:column>
+			<ui:define name="content">
+				<p:dataTable var="course" value="#{dtBasicView.courses}">
+					<p:column headerText="ID kursu">
+						<h:outputText value="#{course.id}" />
+					</p:column>
 
-				<p:column headerText="Język">
-					<h:outputText value="#{course.language}" />
-				</p:column>
+					<p:column headerText="Język">
+						<h:outputText value="#{course.language}" />
+					</p:column>
 
-				<p:column headerText="Poziom">
-					<h:outputText value="#{course.standard}" />
-				</p:column>
+					<p:column headerText="Poziom">
+						<h:outputText value="#{course.standard}" />
+					</p:column>
 
-				<p:column headerText="Czas trwania">
-					<h:outputText value="#{course.length}" />
-				</p:column>
+					<p:column headerText="Czas trwania">
+						<h:outputText value="#{course.length}" />
+					</p:column>
 
-				<p:column headerText="Prowadzący kurs">
-					<h:outputText value="#{course.lector}" />
-				</p:column>
-			</p:dataTable>
-		</ui:define>
+					<p:column headerText="Prowadzący kurs">
+						<h:outputText value="#{course.lector}" />
+					</p:column>
+				</p:dataTable>
+			</ui:define>
 
-	</ui:composition>
-</h:body>
+		</ui:composition>
+	</h:body>
+</f:view>
 </html>

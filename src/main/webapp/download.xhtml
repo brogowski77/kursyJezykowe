@@ -5,17 +5,79 @@
 	xmlns:f="http://java.sun.com/jsf/core"
 	xmlns:ui="http://java.sun.com/jsf/facelets"
 	xmlns:p="http://primefaces.org/ui">
-<h:head>
-	<title>PERFECT - pobieranie</title>
-	<meta content='text/html; charset=UTF-8' http-equiv="Content-Type"/>
-</h:head>
-<h:body>
-	<ui:composition template="/index.xhtml">
+<f:view>
+	<h:head>
+		<title>PERFECT - pobieranie</title>
+		<meta content='text/html; charset=UTF-8' http-equiv="Content-Type" />
+	</h:head>
+	<h:body>
+		<ui:composition template="/index.xhtml">
 
-		<ui:define name="content">
-			<h:outputText value="SlaskManager 2015 - wersja 1.7-SNAPSHOT" />
-		</ui:define>
+			<ui:define name="content">
+				<p>
+					Znajdziesz tutaj podstawowe informacje o naszych kursach.<br />
+					Dowiesz się w jakim formacie prowadzone są zajęcia oraz jak
+					przygotować się przed rozpoczęciem kursu.
+				</p>
 
-	</ui:composition>
-</h:body>
+				<p>Informacje o kursie z języka angielskiego(pdf):</p>
+				<img
+					src="http://www.landscapemap2.org/southnp/images/englishflagv2.png"
+					alt="flaga Wielkiej Brytanii" width="200" height="100" />
+				<h:form>
+					<p:commandButton value="Angielski" ajax="false"
+						onclick="PrimeFaces.monitorDownload(start, stop);"
+						icon="ui-icon-arrowthick-1-s">
+						<p:fileDownload value="#{fileDownloadView.fileGb}" />
+					</p:commandButton>
+				</h:form>
+				<p>Informacje o kursie z języka niemeickiego(pdf):</p>
+				<img src="http://www.allplacesmap.com/flags/germany-flag.gif"
+					alt="flaga Niemiec" width="200" height="100" />
+				<h:form>
+					<p:commandButton value="Niemiecki" ajax="false"
+						onclick="PrimeFaces.monitorDownload(start, stop);"
+						icon="ui-icon-arrowthick-1-s">
+						<p:fileDownload value="#{fileDownloadView.fileDe}" />
+					</p:commandButton>
+				</h:form>
+				<p>Informacje o kursie z języka japońskiego(pdf):</p>
+				<img
+					src="http://kanjicreator.com/wp-content/uploads/2012/07/japan-flag-300x150.gif"
+					alt="flaga Japonii" width="200" height="100" />
+				<h:form>
+					<p:commandButton value="Japoński" ajax="false"
+						onclick="PrimeFaces.monitorDownload(start, stop);"
+						icon="ui-icon-arrowthick-1-s">
+						<p:fileDownload value="#{fileDownloadView.fileJp}" />
+					</p:commandButton>
+				</h:form>
+				<p>Informacje o kursie z języka hiszpańskiego(pdf):</p>
+				<img
+					src="http://www.carolinelucas.co.uk/australia/wp-content/uploads/2012/05/SpainFlag-300x150.png"
+					alt="flaga Hiszpanii" width="200" height="100" />
+				<h:form>
+					<p:commandButton value="Hiszpański" ajax="false"
+						onclick="PrimeFaces.monitorDownload(start, stop);"
+						icon="ui-icon-arrowthick-1-s">
+						<p:fileDownload value="#{fileDownloadView.fileSp}" />
+					</p:commandButton>
+				</h:form>
+				<p>Informacje o kursie z języka norweskiego(pdf):</p>
+				<img
+					src="http://www.landscapemap2.org/southnp/images/norwayflagv2.png"
+					alt="flaga Norwegii" width="200" height="100" />
+				<h:form>
+					<p:commandButton value="Norweski" ajax="false"
+						onclick="PrimeFaces.monitorDownload(start, stop);"
+						icon="ui-icon-arrowthick-1-s">
+						<p:fileDownload value="#{fileDownloadView.fileNo}" />
+					</p:commandButton>
+				</h:form>
+
+			</ui:define>
+
+		</ui:composition>
+	</h:body>
+</f:view>
 </html>
