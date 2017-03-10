@@ -1,5 +1,10 @@
 package pl.brogowski77.primefaces.domain;
-
+/**
+ * 
+ * Exemplary class used only for tests
+ * 
+ *
+ */
 public class Car {
 	private Integer id;
 	private Integer year;

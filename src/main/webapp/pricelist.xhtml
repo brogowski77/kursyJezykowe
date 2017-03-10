@@ -14,7 +14,45 @@
 		<ui:composition template="/index.xhtml">
 
 			<ui:define name="content">
-				<h:outputText value="Cennik" />
+				<h:form>
+					<p:dataScroller value="#{dataScrollerView.courseTypes}"
+						var="courseType" chunkSize="10">
+						<f:facet name="header">
+            Cennik
+        </f:facet>
+
+						<h:panelGrid columns="2" style="width:100%"
+							columnClasses="logo,detail">
+							<p:graphicImage name="#{courseType.image}" width="240" height="120"/>
+
+							<p:outputPanel>
+								<h:panelGrid columns="3" cellpadding="5">
+									<h:outputText value="Język:" />
+									<h:outputText value="#{courseType.language}"
+										style="font-weight: bold" />
+									<p></p>
+
+									<h:outputText value="Czas trwania:" />
+									<h:outputText value="#{courseType.length}"
+										style="font-weight: bold" />
+									<p></p>
+
+									<h:outputText value="Poziom:" />
+									<h:outputText value="#{courseType.standard}"
+										style="font-weight: bold" />
+									<h:outputText value="#{courseType.message}"
+										style="font-weight: bold" />
+
+									<h:outputText value="Cena:" />
+									<h:outputText value="#{courseType.price}"
+										style="font-weight: bold" />
+									<p></p>
+
+								</h:panelGrid>
+							</p:outputPanel>
+						</h:panelGrid>
+					</p:dataScroller>
+				</h:form>
 			</ui:define>
 
 		</ui:composition>
