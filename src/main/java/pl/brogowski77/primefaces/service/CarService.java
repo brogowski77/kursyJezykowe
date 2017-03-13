@@ -7,7 +7,9 @@ import java.util.List;
 import javax.faces.bean.ManagedBean;
 
 import pl.brogowski77.primefaces.domain.Car;
- 
+ /**
+  * Exemplary class used only for tests
+  */
 @ManagedBean(name = "carService")
 public class CarService {
      
